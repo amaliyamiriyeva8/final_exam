@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  margin: 0 auto;
+  padding: 0px 30px;
+  max-width: 1300px;
+}
+
+.header1 {
+  width: 100%;
+  padding: 30px 0px;
+}
+.header1 .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header1 .img img {
+  width: 180px;
+  object-fit: cover;
+}
+
+.nav1 {
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1001;
+}
+.nav1 .navs {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  z-index: 1001;
+}
+.nav1 .navs .ul {
+  padding-left: 50px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.nav1 .navs .ul li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(71, 71, 71);
+}
+.nav1 .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav1 .navbar i {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.nav1 .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+}
+.nav1 .navbar ul li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  color: rgb(71, 71, 71);
+}
+
+.section1 {
+  width: 100%;
+}
+.section1 .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section1 .second .first-1 {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/hero_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 250px 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section1 .second .first-1 h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 26px;
+  color: white;
+  font-weight: 100;
+}
+.section1 .second .first-1 p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 79px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 800;
+}
+
+.section2 {
+  width: 100%;
+  padding: 90px 0px;
+}
+.section2 .word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section2 .word h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 45px;
+  font-weight: 100;
+}
+.section2 .word p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-family: 400;
+}
+.section2 .word h2 {
+  color: rgb(173, 0, 144);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-family: 400;
+  text-align: center;
+}
+.section2 .word h2 i {
+  padding: 5px 0px 0px 5px;
+  font-size: 20px;
+}
+
+.all {
+  width: 100%;
+  padding: 0px 0px 100px 0px;
+}
+.all .all-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.all .all-1 select {
+  width: 200px;
+  padding: 8px 0px;
+  cursor: pointer;
+  outline: none;
+}
+.all .all-1 input {
+  width: 80%;
+  padding: 8px 0px;
+  outline: none;
+  cursor: pointer;
+  padding-left: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-family: 400;
+}
+
+main {
+  width: 100%;
+  padding: 120px 0px 100px 0px;
+}
+main .js {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+main .js .js-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  padding: 5px 10px;
+  width: 32%;
+  background-color: rgb(243, 244, 245);
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+main .js .js-1:hover {
+  background-color: white;
+  transition: all ease 0.6s;
+}
+main .js .js-1 img {
+  width: 350px;
+  object-fit: cover;
+  margin-top: -100px;
+}
+main .js .js-1 h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+main .js .js-1 p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-family: 400;
+  color: gray;
+}
+main .js .js-1 button {
+  border-radius: 10px;
+  width: 100px;
+  padding: 8px 0px;
+  border: 1px solid rgb(173, 0, 144);
+  background-color: rgb(173, 0, 144);
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-family: 400;
+  color: gray;
+}
+
+.section3 {
+  width: 100%;
+  padding: 90px 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/hero_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.section3 .every {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 750px;
+  flex-direction: column;
+  gap: 20px;
+}
+.section3 .every h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.section3 .every p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 79px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 800;
+}
+
+.section4 {
+  background-color: rgb(248, 249, 250);
+  width: 100%;
+  padding: 100px 0px 0px 0px;
+}
+.section4 .all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.section4 .all .sentences {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.section4 .all .sentences .sentences-1 {
+  width: 31%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.section4 .all .sentences .sentences-1 .img {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(173, 0, 144);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .all .sentences .sentences-1 .img img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.section4 .all .sentences .sentences-1 h1 {
+  font-style: italic;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 19px;
+  color: gray;
+  line-height: 32px;
+}
+.section4 .all .sentences .sentences-1 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: rgb(173, 0, 144);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.section4 .all .sentences .sentences-2 {
+  width: 31%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.section4 .all .sentences .sentences-2 .img {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(173, 0, 144);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .all .sentences .sentences-2 .img img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.section4 .all .sentences .sentences-2 h1 {
+  font-style: italic;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 19px;
+  color: gray;
+  line-height: 32px;
+}
+.section4 .all .sentences .sentences-2 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: rgb(173, 0, 144);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.section4 .all .sentences .sentences-3 {
+  width: 31%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.section4 .all .sentences .sentences-3 .img {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(173, 0, 144);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .all .sentences .sentences-3 .img img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.section4 .all .sentences .sentences-3 h1 {
+  font-style: italic;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 19px;
+  color: gray;
+  line-height: 32px;
+}
+.section4 .all .sentences .sentences-3 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: rgb(173, 0, 144);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.section4 .all .line {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section4 .all .line .line-1 {
+  width: 20px;
+  height: 4px;
+  background-color: rgb(173, 0, 144);
+}
+.section4 .all .line .line-2 {
+  width: 20px;
+  height: 4px;
+  background-color: gray;
+}
+
+.section5 {
+  width: 100%;
+  padding: 40px 0px 50px 0px;
+  background-color: rgb(248, 249, 250);
+}
+.section5 .exam {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.section5 .exam .exam-1 {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.section5 .exam .exam-1 img {
+  width: 100%;
+  object-fit: cover;
+}
+.section5 .exam .exam-1 h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+.section5 .exam .exam-1 p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+}
+.section5 .exam .exam-1 h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+.section5 .exam .exam-1 h2 span {
+  color: gray;
+}
+
+.section6 {
+  width: 100%;
+  padding: 40px 0px 30px 0px;
+}
+.section6 .finish {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.section6 .finish div {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(173, 0, 144);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all ease 0.5s;
+}
+.section6 .finish div:hover {
+  cursor: pointer;
+  transition: all ease 0.6s;
+  background-color: rgb(26, 26, 26);
+}
+.section6 .finish div i {
+  color: white;
+  font-size: 13px;
+}
+
+footer {
+  width: 100%;
+  padding: 0px 30px 100px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: gray;
+}
+footer p span {
+  color: rgb(173, 0, 144);
+  cursor: pointer;
+}
+footer p i {
+  color: rgb(173, 0, 144);
+}
+
+.add {
+  width: 100%;
+  padding: 100px 0px;
+}
+.add .add-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.add .add-page form {
+  width: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 20px;
+  background-color: lightblue;
+}
+.add .add-page form label {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: gray;
+}
+.add .add-page form label p {
+  color: red;
+  display: none;
+}
+.add .add-page form input {
+  outline: none;
+  padding: 8px 0px;
+  cursor: pointer;
+}
+.add .add-page table {
+  width: 100%;
+  padding: 5px 0px;
+}
+.add .add-page table tr {
+  border: 2px solid navy;
+  padding: 5px 5px;
+}
+.add .add-page table th {
+  border: 2px solid navy;
+  padding: 5px 5px;
+}
+.add .add-page table td {
+  border: 2px solid navy;
+  padding: 5px 5px;
+}
+
+@media screen and (max-width: 1030px) {
+  .nav1 {
+    width: 100%;
+  }
+  .nav1 .navbar {
+    width: 100%;
+  }
+  .nav1 .navbar i {
+    display: block;
+  }
+  .nav1 .navbar ul {
+    display: none;
+  }
+  .section1 {
+    width: 100%;
+  }
+  .section1 .second {
+    width: 100%;
+  }
+  .section1 .second .slide {
+    width: 100%;
+  }
+  .section1 .second .slide .first-1 {
+    padding: 250px 100px;
+    width: 100%;
+  }
+  .section1 .second .slide .first-1 h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 29px;
+    color: white;
+    font-weight: 100;
+  }
+  .section1 .second .slide .first-1 p {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 800;
+  }
+  .section3 {
+    width: 100%;
+  }
+  .section3 .every {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .section3 .every h1 {
+    font-size: 23px;
+  }
+  .section3 .every p {
+    font-size: 30px;
+  }
+  .section4 {
+    width: 100%;
+  }
+  .section4 .all {
+    width: 100%;
+  }
+  .section4 .all .sentences {
+    width: 100%;
+  }
+  .section4 .all .sentences .sentences-1 {
+    width: 46%;
+  }
+  .section4 .all .sentences .sentences-2 {
+    width: 46%;
+  }
+  .section4 .all .sentences .sentences-3 {
+    display: none;
+  }
+  .section5 {
+    width: 100%;
+  }
+  .section5 .exam {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .section5 .exam .exam-1 {
+    width: 46%;
+  }
+  main .js .js-1 {
+    margin-top: 100px;
+    width: 46%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .nav1 {
+    width: 100%;
+  }
+  .nav1 .navbar {
+    width: 100%;
+  }
+  .nav1 .navbar i {
+    display: block;
+  }
+  .nav1 .navbar ul {
+    display: none;
+  }
+  .section1 {
+    width: 100%;
+  }
+  .section1 .second {
+    width: 100%;
+  }
+  .section1 .second .slide {
+    width: 100%;
+  }
+  .section1 .second .slide .first-1 {
+    width: 100%;
+    padding: 250px 50px;
+  }
+  .section1 .second .slide .first-1 h1 {
+    font-size: 20px;
+  }
+  .section1 .second .slide .first-1 p {
+    font-size: 30px;
+  }
+  .section2 {
+    width: 100%;
+  }
+  .section2 .word {
+    width: 100%;
+  }
+  main .js {
+    justify-content: space-between;
+    gap: 40px;
+  }
+  main .js .js-1 {
+    width: 46%;
+  }
+  .section4 {
+    width: 100%;
+  }
+  .section4 .all {
+    width: 100%;
+  }
+  .section4 .all .sentences {
+    width: 100%;
+  }
+  .section4 .all .sentences .sentences-1 {
+    width: 100%;
+  }
+  .section4 .all .sentences .sentences-1 h1 {
+    font-size: 16px;
+  }
+  .section4 .all .sentences .sentences-2 {
+    display: none;
+  }
+  .section4 .all .sentences .sentences-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section2 {
+    width: 100%;
+  }
+  .section2 .word {
+    width: 100%;
+  }
+  .section1 {
+    width: 100%;
+  }
+  .section1 .second {
+    width: 100%;
+  }
+  .section1 .second .slide {
+    width: 100%;
+  }
+  .section1 .second .slide .first-1 {
+    width: 100%;
+    padding: 150px 0px;
+  }
+  .section1 .second .slide .first-1 h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+  }
+  .section1 .second .slide .first-1 p {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 800;
+  }
+  .section5 {
+    width: 100%;
+  }
+  .section5 .exam {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section5 .exam .exam-1 {
+    width: 100%;
+  }
+  main .js {
+    flex-direction: column;
+    gap: 40px;
+  }
+  main .js .js-1 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
